@@ -207,6 +207,9 @@ main #services {
 main #services .container {
   text-align: center;
 }
+main #services .container .service-text {
+  margin-left: 29px;
+}
 main #services .container .service-text h1 {
   font-size: 30px;
   font-weight: 700;
