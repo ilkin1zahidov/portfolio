@@ -1,0 +1,1280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f3f3f4;
+}
+
+header #portfolio--head {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+header #portfolio--head .container {
+  padding: 20px;
+}
+header #portfolio--head .container .portfolio-contact {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 17px 0px;
+}
+header #portfolio--head .container .portfolio-contact .nav-head a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+header #portfolio--head .container .portfolio-contact .contact-me {
+  display: flex;
+  position: relative;
+}
+header #portfolio--head .container .portfolio-contact .contact-me .contact-section {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+header #portfolio--head .container .portfolio-contact .contact-me .contact-section .home::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #fff;
+  width: 44px;
+  top: 25px;
+  left: 1px;
+  background-color: #fff;
+}
+header #portfolio--head .container .portfolio-contact .contact-me .contact-section a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+header #portfolio--head .container .portfolio-contact .contact-me .contact-section .contact-drop {
+  position: relative;
+}
+header #portfolio--head .container .portfolio-contact .contact-me .contact-section .contact-drop:hover .dropdown {
+  display: block;
+  transition: 0.7s;
+}
+header #portfolio--head .container .portfolio-contact .contact-me .contact-section .dropdown {
+  position: absolute;
+  display: none;
+  background-color: #f3f3f4;
+  color: #000;
+  width: 193px;
+  height: 210px;
+  left: 18px;
+  list-style: none;
+  z-index: 1;
+}
+header #portfolio--head .container .portfolio-contact .contact-me .contact-section .dropdown li {
+  cursor: pointer;
+  text-align: start;
+  padding: 10px;
+}
+header #portfolio--head .container .portfolio-contact .contact-me .contact-section .dropdown li a {
+  color: #4e4e4e;
+}
+header #portfolio--head .container .portfolio-contact .contact-me .contact-section .dropdown li:hover {
+  color: #23a6f0;
+  transition: 0.5s;
+}
+header #portfolio--head .portfolio-slide {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+header #portfolio--head .portfolio-slide img {
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.5);
+}
+header #portfolio--head .portfolio-slide .portfolio_name {
+  position: absolute;
+  top: 240px;
+  left: 495px;
+  font-size: 85px;
+  font-weight: 700;
+}
+header #portfolio--head .portfolio-slide .portfolio_surname {
+  position: absolute;
+  top: 358px;
+  left: 620px;
+  font-size: 44px;
+  font-weight: 700;
+  --animate-duration: 5s;
+}
+
+main #about--info {
+  width: 100%;
+  height: auto;
+}
+main #about--info .container {
+  padding: 50px;
+}
+main #about--info .container .about_place {
+  width: 1320px;
+  height: 568px;
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+}
+main #about--info .container .about_place .about-text {
+  padding: 50px;
+  width: 50%;
+}
+main #about--info .container .about_place .about-text .portfolio-profile {
+  display: flex;
+}
+main #about--info .container .about_place .about-text .portfolio-profile .portfolio-common img {
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #about--info .container .about_place .about-text .portfolio-profile .portfolio-text {
+  line-height: 40px;
+  margin-left: 30px;
+}
+main #about--info .container .about_place .about-text .portfolio-profile .portfolio-text .info_head {
+  font-weight: 700;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+main #about--info .container .about_place .about-text .portfolio-skills p {
+  font-weight: 700;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1.2rem 0;
+}
+main #about--info .container .about_place .about-text .portfolio-skills span {
+  color: #4e4e4e;
+  font-size: 1.1rem;
+}
+main #about--info .container .about_place .about-text .portfolio-skills .skills-score {
+  background-color: #cde1f8;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: 0.7rem;
+}
+main #about--info .container .about_place .about-me {
+  padding: 50px;
+  width: 50%;
+}
+main #about--info .container .about_place .about-me .me-text {
+  position: relative;
+}
+main #about--info .container .about_place .about-me .me-text h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+main #about--info .container .about_place .about-me .me-text h1::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #0078ff;
+  width: 83px;
+  top: 35px;
+  left: 1px;
+  background-color: #0078ff;
+}
+main #about--info .container .about_place .about-me .me-text p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  opacity: 0.7;
+  margin-top: 30px;
+}
+main #services {
+  width: 100%;
+  height: auto;
+}
+main #services .container {
+  text-align: center;
+}
+main #services .container .service-text h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+main #services .container p {
+  margin-bottom: 10px;
+}
+main #services .container .line {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+main #web--card {
+  width: 100%;
+  height: auto;
+}
+main #web--card .container {
+  padding: 50px;
+}
+main #web--card .container .card-all {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main #web--card .container .card-all .card-common {
+  width: 32%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 8px -4px grey;
+  margin: 0 auto;
+}
+main #web--card .container .card-all .card-common .card {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+main #web--card .container .card-all .card-common .card .iconss {
+  border: 9px solid #0078ff;
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  padding: 21px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+main #web--card .container .card-all .card-common .card .iconss i {
+  font-size: 38px;
+}
+main #web--card .container .card-all .card-common .card .iconss:hover {
+  transition: 1s;
+  background-color: #0078ff;
+  color: #fff;
+  border: 9px solid #f3f3f4;
+}
+main #web--card .container .card-all .card-common .card .card-body h1 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+main #web--card .container .card-all .card-common .card .card-body p {
+  color: #4e4e4e;
+  line-height: 22px;
+}
+main #works-experience {
+  width: 100%;
+  height: 432px;
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+}
+main #works-experience img {
+  height: 100vh;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+}
+main #works-experience .image-color {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: #0078ff;
+}
+main #works-experience .card-all {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 50px;
+}
+main #works-experience .card-all .card-common {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  opacity: 0.7;
+}
+main #works-experience .card-all .card-common .card {
+  width: 100%;
+  height: auto;
+  padding: 60px;
+}
+main #works-experience .card-all .card-common .card .iconss {
+  border: 9px solid #f3f3f4;
+  margin: 0 auto;
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  padding: 21px;
+  color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+main #works-experience .card-all .card-common .card .iconss i {
+  font-size: 38px;
+}
+main #works-experience .card-all .card-common .card .card-body {
+  color: #fff;
+}
+main #works-experience .card-all .card-common .card .card-body h1 {
+  font-size: 33px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+main #works-experience .card-all .card-common .card .card-body p {
+  line-height: 22px;
+}
+main #portfolio {
+  width: 100%;
+  height: auto;
+}
+main #portfolio .container {
+  text-align: center;
+  padding: 20px;
+}
+main #portfolio .container .portfolio-text h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+main #portfolio .container p {
+  margin-bottom: 10px;
+}
+main #portfolio .container .line {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+main #portfolio--card {
+  width: 100%;
+  height: auto;
+}
+main #portfolio--card .container {
+  padding: 20px;
+}
+main #portfolio--card .container .card-all {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+main #portfolio--card .container .card-all .card-common {
+  width: 32%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px -4px grey;
+  margin: 0 auto;
+}
+main #portfolio--card .container .card-all .card-common .card {
+  width: 100%;
+  height: auto;
+}
+main #portfolio--card .container .card-all .card-common .card .portfoli-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+main #portfolio--card .container .card-all .card-common .card .portfoli-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.7s;
+}
+main #portfolio--card .container .card-all .card-common .card .portfoli-img img:hover {
+  transform: scale(1.3);
+  transition: 0.7s;
+}
+main #portfolio--card .container .card-all .card-common .card .card-body {
+  padding: 20px 10px;
+}
+main #portfolio--card .container .card-all .card-common .card .card-body h1 {
+  font-size: 21px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+main #portfolio--card .container .card-all .card-common .card .card-body .circle {
+  position: relative;
+  cursor: pointer;
+  color: #0078ff;
+}
+main #portfolio--card .container .card-all .card-common .card .card-body .circle .plus_icon {
+  font-size: 41px;
+  position: absolute;
+  bottom: -8px;
+  right: 10px;
+}
+
+footer #end--slide {
+  width: 100%;
+  height: 71vh;
+  position: relative;
+  overflow: hidden;
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+}
+footer #end--slide img {
+  height: 100vh;
+  height: auto;
+  background-color: #0078ff;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+footer #end--slide .image-color {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: #0078ff;
+  z-index: -1;
+}
+footer #end--slide .container {
+  padding: 20px;
+}
+footer #end--slide .container .about_place {
+  width: 1320px;
+  height: 67vh;
+  background-color: #fff !important;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 5px;
+  z-index: 10;
+}
+footer #end--slide .container .about_place .about-text {
+  padding: 50px;
+  width: 50%;
+  position: relative;
+}
+footer #end--slide .container .about_place .about-text h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  padding: 3px 14px;
+}
+footer #end--slide .container .about_place .about-text h1::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #0078ff;
+  width: 83px;
+  top: 86px;
+  left: 65px;
+  background-color: #0078ff;
+}
+footer #end--slide .container .about_place .about-text form .input-form {
+  margin: 10px;
+  width: 70%;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+}
+footer #end--slide .container .about_place .about-text form .input-message {
+  width: 70%;
+  height: 80px;
+  margin: 10px;
+  padding: 10px;
+  outline: none;
+}
+footer #end--slide .container .about_place .about-text form .message_submit {
+  background-color: #0078ff;
+  border: 1px solid #0078ff;
+  padding: 14px 27px;
+  color: #fff;
+  transition: 0.4s;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+  border-radius: 2rem;
+  outline: none;
+}
+footer #end--slide .container .about_place .about-me {
+  padding: 50px;
+  width: 50%;
+}
+footer #end--slide .container .about_place .about-me .me-text {
+  position: relative;
+}
+footer #end--slide .container .about_place .about-me .me-text h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+footer #end--slide .container .about_place .about-me .me-text h1::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #0078ff;
+  width: 83px;
+  top: 35px;
+  left: 1px;
+  background-color: #0078ff;
+}
+footer #end--slide .container .about_place .about-me .me-text p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  opacity: 0.7;
+  margin-top: 30px;
+}
+footer #end--slide .container .about_place .about-me .me-text .icons .contact_icons {
+  color: #0078ff;
+  margin: 8px;
+}
+footer #end--slide .container .about_place .about-me .me-text .icons span {
+  margin-left: 10px;
+  font-size: 17px;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact {
+  display: flex;
+  gap: 18px;
+  margin-top: 30px;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .facebook {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #0078ff;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .facebook i {
+  padding: 7px;
+  font-size: 20px;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .facebook:hover {
+  background-color: #0078ff;
+  color: #fff;
+  transition: 0.7s;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .instagram {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #0078ff;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .instagram i {
+  padding: 8px;
+  font-size: 20px;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .instagram:hover {
+  background-color: #0078ff;
+  color: #fff;
+  transition: 0.7s;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .twitter {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #0078ff;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .twitter i {
+  padding: 8px;
+  font-size: 20px;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .twitter:hover {
+  background-color: #0078ff;
+  color: #fff;
+  transition: 0.7s;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .linkedin {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #0078ff;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .linkedin i {
+  padding: 9px;
+  font-size: 20px;
+}
+footer #end--slide .container .about_place .about-me .me-text .social-contact .linkedin:hover {
+  background-color: #0078ff;
+  color: #fff;
+  transition: 0.7s;
+}
+footer #end--info {
+  width: 100%;
+  height: auto;
+  background-color: #0078ff;
+}
+footer #end--info .container {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  header #portfolio--head {
+    width: 100%;
+    height: auto;
+    background-color: #f3f3f4 !important;
+  }
+  header #portfolio--head .container {
+    padding: 20px;
+  }
+  header #portfolio--head .container .portfolio-contact {
+    display: flex;
+    justify-content: left !important;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 426px;
+    height: 60px;
+    z-index: 99;
+    background: #000;
+    padding: 17px 0px;
+  }
+  header #portfolio--head .container .portfolio-contact:after {
+    content: "";
+    width: 30%;
+    background-color: #000;
+  }
+  header #portfolio--head .container .portfolio-contact .nav-head {
+    position: relative;
+    width: 35%;
+  }
+  header #portfolio--head .container .portfolio-contact .nav-head a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  header #portfolio--head .container .portfolio-contact .nav-head i {
+    display: block;
+    color: #fff;
+    position: absolute;
+    right: -255px;
+    top: 4px;
+    font-size: 30px;
+  }
+  header #portfolio--head .container .portfolio-contact .contact-me {
+    display: none;
+  }
+  header #portfolio--head .portfolio-slide {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    width: 426px;
+    height: auto;
+  }
+  header #portfolio--head .portfolio-slide img {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+  }
+  header #portfolio--head .portfolio-slide .portfolio_name {
+    position: absolute;
+    top: 331px;
+    left: 91px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  header #portfolio--head .portfolio-slide .portfolio_surname {
+    position: absolute;
+    top: 400px;
+    left: 86px;
+    font-size: 20px;
+    font-weight: 700;
+    --animate-duration: 5s;
+    width: 198px;
+    height: 100px;
+    text-align: center;
+  }
+  main #about--info {
+    width: 100%;
+    height: auto;
+  }
+  main #about--info .container {
+    padding: 30px;
+    margin-left: 3px;
+  }
+  main #about--info .container .about_place {
+    width: 366px;
+    height: 1499px;
+    background-color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  main #about--info .container .about_place .about-text {
+    width: 100%;
+  }
+  main #about--info .container .about_place .about-text .portfolio-profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  main #about--info .container .about_place .about-text .portfolio-profile .portfolio-common img {
+    border-radius: 5px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main #about--info .container .about_place .about-text .portfolio-profile .portfolio-text {
+    margin-left: 1px;
+  }
+  main #about--info .container .about_place .about-text .portfolio-profile .portfolio-text .info_head {
+    font-weight: 700;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+  }
+  main #about--info .container .about_place .about-text .portfolio-skills p {
+    font-weight: 700;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1.2rem 0;
+  }
+  main #about--info .container .about_place .about-text .portfolio-skills span {
+    color: #4e4e4e;
+    font-size: 1.1rem;
+  }
+  main #about--info .container .about_place .about-text .portfolio-skills .skills-score {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.7rem;
+  }
+  main #about--info .container .about_place .about-me {
+    padding: 40px;
+    width: 100%;
+  }
+  main #about--info .container .about_place .about-me .me-text {
+    position: relative;
+  }
+  main #about--info .container .about_place .about-me .me-text h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+  main #about--info .container .about_place .about-me .me-text h1::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #0078ff;
+    width: 83px;
+    top: 35px;
+    left: 1px;
+    background-color: #0078ff;
+  }
+  main #about--info .container .about_place .about-me .me-text p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.7;
+    margin-top: 30px;
+  }
+  main #services {
+    width: 100%;
+    height: auto;
+  }
+  main #services .container {
+    text-align: center;
+  }
+  main #services .container .service-text h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  main #services .container p {
+    margin-bottom: 10px;
+  }
+  main #services .container .line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+  }
+  main #web--card {
+    width: 100%;
+    height: auto;
+  }
+  main #web--card .container {
+    padding: 16px 0px;
+    width: 100%;
+    margin-left: 17px;
+  }
+  main #web--card .container .card-all {
+    width: 100%;
+    display: flex;
+    gap: 19px;
+    flex-direction: column;
+  }
+  main #web--card .container .card-all .card-common {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 8px -4px grey;
+    margin: 0 auto;
+  }
+  main #web--card .container .card-all .card-common .card {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+  }
+  main #web--card .container .card-all .card-common .card .iconss {
+    border: 9px solid #0078ff;
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    padding: 21px;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  main #web--card .container .card-all .card-common .card .iconss i {
+    font-size: 38px;
+  }
+  main #web--card .container .card-all .card-common .card .iconss:hover {
+    transition: 1s;
+    background-color: #0078ff;
+    color: #fff;
+    border: 9px solid #f3f3f4;
+  }
+  main #web--card .container .card-all .card-common .card .card-body h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  main #web--card .container .card-all .card-common .card .card-body p {
+    color: #4e4e4e;
+    line-height: 22px;
+  }
+  main #works-experience {
+    width: 427px;
+    height: 1216px;
+    position: relative;
+    overflow: hidden;
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+    margin-left: -1px;
+  }
+  main #works-experience img {
+    height: 100vh;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: fixed;
+    left: o;
+    top: 0;
+    background-repeat: no-repeat;
+  }
+  main #works-experience .image-color {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #0078ff;
+  }
+  main #works-experience .card-all {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  main #works-experience .card-all .card-common {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.7;
+  }
+  main #works-experience .card-all .card-common .card {
+    width: 100%;
+    height: auto;
+    padding: 60px;
+  }
+  main #works-experience .card-all .card-common .card .iconss {
+    border: 9px solid #f3f3f4;
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    padding: 21px;
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  main #works-experience .card-all .card-common .card .iconss i {
+    font-size: 38px;
+  }
+  main #works-experience .card-all .card-common .card .card-body {
+    color: #fff;
+  }
+  main #works-experience .card-all .card-common .card .card-body h1 {
+    font-size: 33px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  main #works-experience .card-all .card-common .card .card-body p {
+    line-height: 22px;
+  }
+  main #portfolio {
+    width: 100%;
+    height: auto;
+  }
+  main #portfolio .container {
+    text-align: center;
+    padding: 20px;
+    margin-left: 43px;
+  }
+  main #portfolio .container .portfolio-text h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  main #portfolio .container p {
+    margin-bottom: 10px;
+  }
+  main #portfolio .container .line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+  }
+  main #portfolio--card {
+    width: 100%;
+    height: auto;
+  }
+  main #portfolio--card .container {
+    padding: 20px;
+  }
+  main #portfolio--card .container .card-all {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    flex-direction: column;
+  }
+  main #portfolio--card .container .card-all .card-common {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 8px -4px grey;
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+  main #portfolio--card .container .card-all .card-common .card {
+    width: 100%;
+    height: auto;
+  }
+  main #portfolio--card .container .card-all .card-common .card .portfoli-img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  main #portfolio--card .container .card-all .card-common .card .portfoli-img img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: 0.7s;
+  }
+  main #portfolio--card .container .card-all .card-common .card .portfoli-img img:hover {
+    transform: scale(1.3);
+    transition: 0.7s;
+  }
+  main #portfolio--card .container .card-all .card-common .card .card-body {
+    padding: 20px 10px;
+  }
+  main #portfolio--card .container .card-all .card-common .card .card-body h1 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  main #portfolio--card .container .card-all .card-common .card .card-body .circle {
+    position: relative;
+    cursor: pointer;
+    color: #0078ff;
+  }
+  main #portfolio--card .container .card-all .card-common .card .card-body .circle .plus_icon {
+    font-size: 41px;
+    position: absolute;
+    bottom: -8px;
+    right: 10px;
+  }
+  footer #end--slide {
+    width: 427px;
+    height: 1198px;
+    position: relative;
+    overflow: hidden;
+    -webkit-clip-path: inset(0);
+            clip-path: inset(0);
+  }
+  footer #end--slide img {
+    height: 100vh;
+    height: auto;
+    background-color: #0078ff;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  footer #end--slide .image-color {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #0078ff;
+    z-index: -1;
+  }
+  footer #end--slide .container {
+    padding: 20px;
+    margin-top: 50px;
+  }
+  footer #end--slide .container .about_place {
+    width: 366px;
+    height: 1115px;
+    background-color: #fff !important;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 5px;
+    z-index: 10;
+    flex-direction: column;
+    margin-left: 11px;
+  }
+  footer #end--slide .container .about_place .about-text {
+    padding: 50px;
+    width: 100%;
+    position: relative;
+  }
+  footer #end--slide .container .about_place .about-text h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    padding: 3px 14px;
+  }
+  footer #end--slide .container .about_place .about-text h1::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #0078ff;
+    width: 83px;
+    top: 86px;
+    left: 65px;
+    background-color: #0078ff;
+  }
+  footer #end--slide .container .about_place .about-text form .input-form {
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+  }
+  footer #end--slide .container .about_place .about-text form .input-message {
+    width: 100%;
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+  }
+  footer #end--slide .container .about_place .about-text form .message_submit {
+    background-color: #0078ff;
+    border: 1px solid #0078ff;
+    padding: 14px 27px;
+    color: #fff;
+    transition: 0.4s;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.7s;
+    border-radius: 2rem;
+    outline: none;
+  }
+  footer #end--slide .container .about_place .about-me {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -50px;
+  }
+  footer #end--slide .container .about_place .about-me .me-text {
+    position: relative;
+  }
+  footer #end--slide .container .about_place .about-me .me-text h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+  footer #end--slide .container .about_place .about-me .me-text h1::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #0078ff;
+    width: 83px;
+    top: 35px;
+    left: 1px;
+    background-color: #0078ff;
+  }
+  footer #end--slide .container .about_place .about-me .me-text p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    opacity: 0.7;
+    margin-top: 30px;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .icons .contact_icons {
+    color: #0078ff;
+    margin: 8px;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .icons span {
+    margin-left: 10px;
+    font-size: 17px;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .facebook {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #0078ff;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .facebook i {
+    padding: 7px;
+    font-size: 20px;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .facebook:hover {
+    background-color: #0078ff;
+    color: #fff;
+    transition: 0.7s;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .instagram {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #0078ff;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .instagram i {
+    padding: 8px;
+    font-size: 20px;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .instagram:hover {
+    background-color: #0078ff;
+    color: #fff;
+    transition: 0.7s;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .twitter {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #0078ff;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .twitter i {
+    padding: 8px;
+    font-size: 20px;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .twitter:hover {
+    background-color: #0078ff;
+    color: #fff;
+    transition: 0.7s;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .linkedin {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #0078ff;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .linkedin i {
+    padding: 9px;
+    font-size: 20px;
+  }
+  footer #end--slide .container .about_place .about-me .me-text .social-contact .linkedin:hover {
+    background-color: #0078ff;
+    color: #fff;
+    transition: 0.7s;
+  }
+  #end--info {
+    width: 100%;
+    height: auto;
+    background-color: #0078ff;
+  }
+  #end--info .container {
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+  }
+}/*# sourceMappingURL=main.css.map */
